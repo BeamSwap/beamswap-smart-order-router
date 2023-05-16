@@ -1,0 +1,11 @@
+.idea/*
+.yalc
+yalc.lock
+.nyc_output
+node_modules
+src/**.js
+coverage
+*.log
+yarn.lock
+.env
+cache/
