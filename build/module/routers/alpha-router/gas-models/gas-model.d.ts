@@ -9,12 +9,12 @@ import { MixedRouteWithValidQuote, RouteWithValidQuote, V2RouteWithValidQuote, V
 export declare const usdGasTokensByChain: {
     [chainId in ChainId]?: Token[];
 };
-export declare type L1ToL2GasCosts = {
+export type L1ToL2GasCosts = {
     gasUsedL1: BigNumber;
     gasCostL1USD: CurrencyAmount;
     gasCostL1QuoteToken: CurrencyAmount;
 };
-export declare type BuildOnChainGasModelFactoryType = {
+export type BuildOnChainGasModelFactoryType = {
     chainId: ChainId;
     gasPriceWei: BigNumber;
     v3poolProvider: IV3PoolProvider;
@@ -23,7 +23,7 @@ export declare type BuildOnChainGasModelFactoryType = {
     v2poolProvider: IV2PoolProvider;
     l2GasDataProvider?: IL2GasDataProvider<OptimismGasData> | IL2GasDataProvider<ArbitrumGasData>;
 };
-export declare type BuildV2GasModelFactoryType = {
+export type BuildV2GasModelFactoryType = {
     chainId: ChainId;
     gasPriceWei: BigNumber;
     poolProvider: IV2PoolProvider;
@@ -45,7 +45,7 @@ export declare type BuildV2GasModelFactoryType = {
  * amount that is considered in the algorithm so it is important to minimize the number of
  * long running operations.
  */
-export declare type IGasModel<TRouteWithValidQuote extends RouteWithValidQuote> = {
+export type IGasModel<TRouteWithValidQuote extends RouteWithValidQuote> = {
     estimateGasCost(routeWithValidQuote: TRouteWithValidQuote): {
         gasEstimate: BigNumber;
         gasCostInToken: CurrencyAmount;
@@ -79,5 +79,5 @@ export declare abstract class IV2GasModelFactory {
  * @class IOnChainGasModelFactory
  */
 export declare abstract class IOnChainGasModelFactory {
-    abstract buildGasModel({ chainId, gasPriceWei, v3poolProvider: V3poolProvider, amountToken, quoteToken, v2poolProvider: V2poolProvider, l2GasDataProvider, }: BuildOnChainGasModelFactoryType): Promise<IGasModel<V3RouteWithValidQuote | MixedRouteWithValidQuote>>;
+    abstract buildGasModel({ chainId, gasPriceWei, v3poolProvider, amountToken, quoteToken, v2poolProvider, l2GasDataProvider, }: BuildOnChainGasModelFactoryType): Promise<IGasModel<V3RouteWithValidQuote | MixedRouteWithValidQuote>>;
 }

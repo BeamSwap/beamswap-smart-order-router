@@ -1,5 +1,5 @@
-import { Provider } from "@ethersproject/providers";
 import { Signer } from "ethers";
+import { Provider } from "@ethersproject/providers";
 import type { IPeripheryPaymentsWithFee, IPeripheryPaymentsWithFeeInterface } from "../IPeripheryPaymentsWithFee";
 export declare class IPeripheryPaymentsWithFee__factory {
     static readonly abi: {
@@ -9,7 +9,7 @@ export declare class IPeripheryPaymentsWithFee__factory {
             type: string;
         }[];
         name: string;
-        outputs: never[];
+        outputs: any[];
         stateMutability: string;
         type: string;
     }[];

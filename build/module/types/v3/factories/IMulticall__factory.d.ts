@@ -1,5 +1,5 @@
-import { Provider } from "@ethersproject/providers";
 import { Signer } from "ethers";
+import { Provider } from "@ethersproject/providers";
 import type { IMulticall, IMulticallInterface } from "../IMulticall";
 export declare class IMulticall__factory {
     static readonly abi: {

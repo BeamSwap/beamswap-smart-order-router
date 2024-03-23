@@ -1,8 +1,8 @@
+import { Signer, ContractFactory, Overrides } from "ethers";
 import { Provider, TransactionRequest } from "@ethersproject/providers";
-import { ContractFactory, Overrides, Signer } from "ethers";
 import type { NonfungiblePositionManager, NonfungiblePositionManagerInterface } from "../NonfungiblePositionManager";
 export declare class NonfungiblePositionManager__factory extends ContractFactory {
-    constructor(signer?: Signer);
+    constructor(...args: [signer: Signer] | ConstructorParameters<typeof ContractFactory>);
     deploy(_factory: string, _WETH9: string, _tokenDescriptor_: string, overrides?: Overrides & {
         from?: string | Promise<string>;
     }): Promise<NonfungiblePositionManager>;

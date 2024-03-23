@@ -18,8 +18,8 @@ export declare class CachingTokenProviderWithFallback implements ITokenProvider 
     protected chainId: ChainId;
     private tokenCache;
     protected primaryTokenProvider: ITokenProvider;
-    protected fallbackTokenProvider?: ITokenProvider | undefined;
+    protected fallbackTokenProvider?: ITokenProvider;
     private CACHE_KEY;
-    constructor(chainId: ChainId, tokenCache: ICache<Token>, primaryTokenProvider: ITokenProvider, fallbackTokenProvider?: ITokenProvider | undefined);
+    constructor(chainId: ChainId, tokenCache: ICache<Token>, primaryTokenProvider: ITokenProvider, fallbackTokenProvider?: ITokenProvider);
     getTokens(_addresses: string[]): Promise<TokenAccessor>;
 }

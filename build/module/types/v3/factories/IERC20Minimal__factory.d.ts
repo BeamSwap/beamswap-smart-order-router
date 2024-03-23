@@ -1,5 +1,5 @@
-import { Provider } from "@ethersproject/providers";
 import { Signer } from "ethers";
+import { Provider } from "@ethersproject/providers";
 import type { IERC20Minimal, IERC20MinimalInterface } from "../IERC20Minimal";
 export declare class IERC20Minimal__factory {
     static readonly abi: ({

@@ -1,5 +1,5 @@
-import { Provider } from "@ethersproject/providers";
 import { Signer } from "ethers";
+import { Provider } from "@ethersproject/providers";
 import type { INonfungiblePositionManager, INonfungiblePositionManagerInterface } from "../INonfungiblePositionManager";
 export declare class INonfungiblePositionManager__factory {
     static readonly abi: ({

@@ -1,5 +1,5 @@
-import { Provider } from "@ethersproject/providers";
 import { Signer } from "ethers";
+import { Provider } from "@ethersproject/providers";
 import type { IV3Migrator, IV3MigratorInterface } from "../IV3Migrator";
 export declare class IV3Migrator__factory {
     static readonly abi: ({
@@ -28,7 +28,7 @@ export declare class IV3Migrator__factory {
             type: string;
         }[];
         name: string;
-        outputs: never[];
+        outputs: any[];
         stateMutability: string;
         type: string;
     })[];
