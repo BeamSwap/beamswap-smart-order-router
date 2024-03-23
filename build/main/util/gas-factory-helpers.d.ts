@@ -19,6 +19,6 @@ export declare function getL2ToL1GasUsed(data: string, overhead: BigNumber): Big
 export declare function calculateGasUsed(chainId: ChainId, route: SwapRoute, simulatedGasUsed: BigNumber, v2PoolProvider: IV2PoolProvider, v3PoolProvider: IV3PoolProvider, l2GasData?: ArbitrumGasData | OptimismGasData): Promise<{
     estimatedGasUsedUSD: CurrencyAmount<Token>;
     estimatedGasUsedQuoteToken: CurrencyAmount<Token>;
-    quoteGasAdjusted: any;
+    quoteGasAdjusted: CurrencyAmount<Currency>;
 }>;
 export declare function initSwapRouteFromExisting(swapRoute: SwapRoute, v2PoolProvider: IV2PoolProvider, v3PoolProvider: IV3PoolProvider, quoteGasAdjusted: CurrencyAmount<Currency>, estimatedGasUsed: BigNumber, estimatedGasUsedQuoteToken: CurrencyAmount<Currency>, estimatedGasUsedUSD: CurrencyAmount<Currency>): SwapRoute;

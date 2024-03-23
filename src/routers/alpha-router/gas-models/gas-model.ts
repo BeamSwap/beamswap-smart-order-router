@@ -23,8 +23,7 @@ import {
   USDC_ETHEREUM_GNOSIS,
   USDC_GÖRLI,
   USDC_KOVAN,
-  USDC_MAINNET,
-  USDC_MOONBASE_ALPHA,
+  USDC_MAINNET, USDC_MOONBASE_ALPHA,
   USDC_MOONBEAM,
   USDC_OPTIMISM,
   USDC_OPTIMISM_GOERLI,
@@ -174,10 +173,10 @@ export abstract class IOnChainGasModelFactory {
   public abstract buildGasModel({
     chainId,
     gasPriceWei,
-    v3poolProvider,
+    v3poolProvider: V3poolProvider,
     amountToken,
     quoteToken,
-    v2poolProvider,
+    v2poolProvider: V2poolProvider,
     l2GasDataProvider,
   }: BuildOnChainGasModelFactoryType): Promise<
     IGasModel<V3RouteWithValidQuote | MixedRouteWithValidQuote>

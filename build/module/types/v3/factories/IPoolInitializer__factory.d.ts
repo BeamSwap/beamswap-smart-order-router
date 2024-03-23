@@ -1,5 +1,5 @@
-import { Signer } from "ethers";
 import { Provider } from "@ethersproject/providers";
+import { Signer } from "ethers";
 import type { IPoolInitializer, IPoolInitializerInterface } from "../IPoolInitializer";
 export declare class IPoolInitializer__factory {
     static readonly abi: {

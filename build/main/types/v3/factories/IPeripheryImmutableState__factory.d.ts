@@ -1,9 +1,9 @@
-import { Signer } from "ethers";
 import { Provider } from "@ethersproject/providers";
+import { Signer } from "ethers";
 import type { IPeripheryImmutableState, IPeripheryImmutableStateInterface } from "../IPeripheryImmutableState";
 export declare class IPeripheryImmutableState__factory {
     static readonly abi: {
-        inputs: any[];
+        inputs: never[];
         name: string;
         outputs: {
             internalType: string;

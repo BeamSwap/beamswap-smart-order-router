@@ -1,5 +1,5 @@
-import { Signer } from "ethers";
 import { Provider } from "@ethersproject/providers";
+import { Signer } from "ethers";
 import type { INonfungibleTokenPositionDescriptor, INonfungibleTokenPositionDescriptorInterface } from "../INonfungibleTokenPositionDescriptor";
 export declare class INonfungibleTokenPositionDescriptor__factory {
     static readonly abi: {

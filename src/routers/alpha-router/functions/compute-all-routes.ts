@@ -49,7 +49,7 @@ export function computeAllMixedRoutes(
   const routesRaw = computeAllRoutes<Pool | Pair, MixedRoute>(
     tokenIn,
     tokenOut,
-    (route: (Pool | Pair | any)[], tokenIn: Token, tokenOut: Token) => {
+    (route: (Pool | Pair)[], tokenIn: Token, tokenOut: Token) => {
       return new MixedRoute(route, tokenIn, tokenOut);
     },
     parts,

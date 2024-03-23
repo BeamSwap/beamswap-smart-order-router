@@ -1,5 +1,5 @@
-import { Signer } from "ethers";
 import { Provider } from "@ethersproject/providers";
+import { Signer } from "ethers";
 import type { IERC721Permit, IERC721PermitInterface } from "../IERC721Permit";
 export declare class IERC721Permit__factory {
     static readonly abi: ({

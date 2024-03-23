@@ -1,5 +1,5 @@
-import { Signer } from "ethers";
 import { Provider } from "@ethersproject/providers";
+import { Signer } from "ethers";
 import type { IWETH9, IWETH9Interface } from "../IWETH9";
 export declare class IWETH9__factory {
     static readonly abi: ({

@@ -1,8 +1,8 @@
-import { Signer, ContractFactory, Overrides } from "ethers";
 import { Provider, TransactionRequest } from "@ethersproject/providers";
+import { ContractFactory, Overrides, Signer } from "ethers";
 import type { PairFlash, PairFlashInterface } from "../PairFlash";
 export declare class PairFlash__factory extends ContractFactory {
-    constructor(...args: [signer: Signer] | ConstructorParameters<typeof ContractFactory>);
+    constructor(signer?: Signer);
     deploy(_swapRouter: string, _factory: string, _WETH9: string, overrides?: Overrides & {
         from?: string | Promise<string>;
     }): Promise<PairFlash>;
@@ -23,7 +23,7 @@ export declare class PairFlash__factory extends ContractFactory {
         name?: undefined;
         outputs?: undefined;
     } | {
-        inputs: any[];
+        inputs: never[];
         name: string;
         outputs: {
             internalType: string;
@@ -44,7 +44,7 @@ export declare class PairFlash__factory extends ContractFactory {
             type: string;
         }[];
         name: string;
-        outputs: any[];
+        outputs: never[];
         stateMutability: string;
         type: string;
     } | {
@@ -54,7 +54,7 @@ export declare class PairFlash__factory extends ContractFactory {
             type: string;
         }[];
         name: string;
-        outputs: any[];
+        outputs: never[];
         stateMutability: string;
         type: string;
     } | {

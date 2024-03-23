@@ -6,14 +6,14 @@ import { IV3PoolProvider } from '../../providers/v3/pool-provider';
 import { CurrencyAmount } from '../../util/amounts';
 import { ChainId } from '../../util/chains';
 import { SwapOptionsSwapRouter02, SwapRoute } from '../router';
-export type LegacyRouterParams = {
+export declare type LegacyRouterParams = {
     chainId: ChainId;
     multicall2Provider: IMulticallProvider;
     poolProvider: IV3PoolProvider;
     quoteProvider: IOnChainQuoteProvider;
     tokenProvider: ITokenProvider;
 };
-export type LegacyRoutingConfig = {
+export declare type LegacyRoutingConfig = {
     blockNumber?: number;
 };
 /**

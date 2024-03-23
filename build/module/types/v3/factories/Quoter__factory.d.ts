@@ -1,8 +1,8 @@
-import { Signer, ContractFactory, Overrides } from "ethers";
 import { Provider, TransactionRequest } from "@ethersproject/providers";
+import { ContractFactory, Overrides, Signer } from "ethers";
 import type { Quoter, QuoterInterface } from "../Quoter";
 export declare class Quoter__factory extends ContractFactory {
-    constructor(...args: [signer: Signer] | ConstructorParameters<typeof ContractFactory>);
+    constructor(signer?: Signer);
     deploy(_factory: string, _WETH9: string, overrides?: Overrides & {
         from?: string | Promise<string>;
     }): Promise<Quoter>;

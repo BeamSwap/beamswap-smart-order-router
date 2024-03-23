@@ -1,5 +1,5 @@
-import { Signer } from "ethers";
 import { Provider } from "@ethersproject/providers";
+import { Signer } from "ethers";
 import type { IERC20PermitAllowed, IERC20PermitAllowedInterface } from "../IERC20PermitAllowed";
 export declare class IERC20PermitAllowed__factory {
     static readonly abi: {
@@ -9,7 +9,7 @@ export declare class IERC20PermitAllowed__factory {
             type: string;
         }[];
         name: string;
-        outputs: any[];
+        outputs: never[];
         stateMutability: string;
         type: string;
     }[];

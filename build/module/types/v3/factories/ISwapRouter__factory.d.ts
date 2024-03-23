@@ -1,5 +1,5 @@
-import { Signer } from "ethers";
 import { Provider } from "@ethersproject/providers";
+import { Signer } from "ethers";
 import type { ISwapRouter, ISwapRouterInterface } from "../ISwapRouter";
 export declare class ISwapRouter__factory {
     static readonly abi: ({
@@ -28,7 +28,7 @@ export declare class ISwapRouter__factory {
             type: string;
         }[];
         name: string;
-        outputs: any[];
+        outputs: never[];
         stateMutability: string;
         type: string;
     })[];

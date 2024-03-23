@@ -1,5 +1,5 @@
-import { Signer } from "ethers";
 import { Provider } from "@ethersproject/providers";
+import { Signer } from "ethers";
 import type { IUniswapV3SwapCallback, IUniswapV3SwapCallbackInterface } from "../IUniswapV3SwapCallback";
 export declare class IUniswapV3SwapCallback__factory {
     static readonly abi: {
@@ -9,7 +9,7 @@ export declare class IUniswapV3SwapCallback__factory {
             type: string;
         }[];
         name: string;
-        outputs: any[];
+        outputs: never[];
         stateMutability: string;
         type: string;
     }[];

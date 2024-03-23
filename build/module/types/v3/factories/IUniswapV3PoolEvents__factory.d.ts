@@ -1,5 +1,5 @@
-import { Signer } from "ethers";
 import { Provider } from "@ethersproject/providers";
+import { Signer } from "ethers";
 import type { IUniswapV3PoolEvents, IUniswapV3PoolEventsInterface } from "../IUniswapV3PoolEvents";
 export declare class IUniswapV3PoolEvents__factory {
     static readonly abi: {

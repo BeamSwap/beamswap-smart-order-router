@@ -16,7 +16,7 @@ import { ChainId } from '../../util/chains';
 import { IRouter, ISwapToRatio, SwapAndAddConfig, SwapAndAddOptions, SwapOptions, SwapRoute, SwapToRatioResponse } from '../router';
 import { IOnChainGasModelFactory, IV2GasModelFactory } from './gas-models/gas-model';
 import { MixedQuoter, V2Quoter, V3Quoter } from './quoters';
-export type AlphaRouterParams = {
+export declare type AlphaRouterParams = {
     /**
      * The chain id for this instance of the Alpha Router.
      */
@@ -122,7 +122,7 @@ export declare class MapWithLowerCaseKey<V> extends Map<string, V> {
  *
  * Higher values here result in more pools to explore which results in higher latency.
  */
-export type ProtocolPoolSelection = {
+export declare type ProtocolPoolSelection = {
     /**
      * The top N pools by TVL out of all pools on the protocol.
      */
@@ -167,7 +167,7 @@ export type ProtocolPoolSelection = {
      */
     topNWithBaseToken: number;
 };
-export type AlphaRouterConfig = {
+export declare type AlphaRouterConfig = {
     /**
      * The block number to use for all on-chain data. If not provided, the router will
      * use the latest block returned by the provider.

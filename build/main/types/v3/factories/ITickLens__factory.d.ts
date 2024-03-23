@@ -1,5 +1,5 @@
-import { Signer } from "ethers";
 import { Provider } from "@ethersproject/providers";
+import { Signer } from "ethers";
 import type { ITickLens, ITickLensInterface } from "../ITickLens";
 export declare class ITickLens__factory {
     static readonly abi: {

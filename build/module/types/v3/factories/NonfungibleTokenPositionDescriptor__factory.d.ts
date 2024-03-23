@@ -1,12 +1,8 @@
-import { Signer, BytesLike, ContractFactory, Overrides } from "ethers";
 import { Provider, TransactionRequest } from "@ethersproject/providers";
+import { BytesLike, ContractFactory, Overrides, Signer } from "ethers";
 import type { NonfungibleTokenPositionDescriptor, NonfungibleTokenPositionDescriptorInterface } from "../NonfungibleTokenPositionDescriptor";
-type NonfungibleTokenPositionDescriptorConstructorParams = [
-    linkLibraryAddresses: NonfungibleTokenPositionDescriptorLibraryAddresses,
-    signer?: Signer
-] | ConstructorParameters<typeof ContractFactory>;
 export declare class NonfungibleTokenPositionDescriptor__factory extends ContractFactory {
-    constructor(...args: NonfungibleTokenPositionDescriptorConstructorParams);
+    constructor(linkLibraryAddresses: NonfungibleTokenPositionDescriptorLibraryAddresses, signer?: Signer);
     static linkBytecode(linkLibraryAddresses: NonfungibleTokenPositionDescriptorLibraryAddresses): string;
     deploy(_WETH9: string, _nativeCurrencyLabelBytes: BytesLike, overrides?: Overrides & {
         from?: string | Promise<string>;
@@ -46,6 +42,5 @@ export declare class NonfungibleTokenPositionDescriptor__factory extends Contrac
     static connect(address: string, signerOrProvider: Signer | Provider): NonfungibleTokenPositionDescriptor;
 }
 export interface NonfungibleTokenPositionDescriptorLibraryAddresses {
-    ["contracts/libraries/NFTDescriptor.sol:NFTDescriptor"]: string;
+    ["__$cea9be979eee3d87fb124d6cbb244bb0b5$__"]: string;
 }
-export {};
